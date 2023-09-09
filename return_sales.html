@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smartpos</title>
+    <link rel="stylesheet" href="vendor/poppins/poppins.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="asset/css/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside>
+      <!-- logo -->
+      <div class="logo">Smartpos</div>
+      <!-- end of logo -->
+
+      <!-- navigation -->
+      <nav>
+        <span></span>
+        <a href="index.html">
+          <i class="bi bi-speedometer"></i>
+          Dashboard
+        </a>
+        <!-- fast menu -->
+        <span>Transaksi</span>
+        <a href="pos.html">
+          <i class="bi bi-bag"></i>
+          Penjualan
+        </a>
+        <a href="purchase.html">
+          <i class="bi bi-cart-plus"></i>
+          Pembelian
+        </a>
+        <a href="expense.html">
+          <i class="bi bi-cash"></i>
+          Pengeluaran
+        </a>
+        <!-- end of fast menu -->
+
+        <!-- main menu -->
+        <span>Main Menu</span>
+
+        <button class="drpd-btn">
+          <i class="bi bi-shop-window"></i>
+          Transaksi
+          <i class="bi bi-caret-left"></i>
+        </button>
+        <div class="drpd-content">
+          <a href="sales_list.html"><i class="bi bi-circle"></i>Data Penjualan</a>
+          <a href="return_sales.html"><i class="bi bi-circle"></i>Retur Penjualan</a>
+          <a href="purchases_list.html"><i class="bi bi-circle"></i>Data Pembelian</a>
+          <a href="return_purchase.html"><i class="bi bi-circle"></i>Retur Pembelian</a>
+          <a href="payable.html"><i class="bi bi-circle"></i>Hutang</a>
+          <a href="receivable.html"><i class="bi bi-circle"></i>Piutang</a>
+        </div>
+
+        <button class="drpd-btn">
+          <i class="bi bi-box-seam"></i>
+          Produk
+          <i class="bi bi-caret-left"></i>
+        </button>
+        <div class="drpd-content">
+          <a href="new_product.html"><i class="bi bi-circle"></i>Produk Baru</a>
+          <a href="product_list.html"><i class="bi bi-circle"></i>Data Produk</a>
+          <a href="category_list.html"><i class="bi bi-circle"></i>Data Kategori</a>
+          <a href="unit_list.html"><i class="bi bi-circle"></i>Data Satuan</a>
+          <a href="stock_opname.html"><i class="bi bi-circle"></i>Stok Opname</a>
+        </div>
+
+        <button class="drpd-btn">
+          <i class="bi bi-bank"></i>
+          Keuangan
+          <i class="bi bi-caret-left"></i>
+        </button>
+        <div class="drpd-content">
+          <a href="transfer.html"><i class="bi bi-circle"></i>Transfer</a>
+          <a href="cashflow.html"><i class="bi bi-circle"></i>Cashflow</a>
+          <a href="cashflow_acc.html"><i class="bi bi-circle"></i>Akun Cashflow</a>
+          <a href="expenses_list.html"><i class="bi bi-circle"></i>Data Pengeluaran</a>
+          <a href="income.html"><i class="bi bi-circle"></i>Data Pemasukan</a>
+        </div>
+
+        <button class="drpd-btn">
+          <i class="bi bi-database"></i>
+          Database
+          <i class="bi bi-caret-left"></i>
+        </button>
+        <div class="drpd-content">
+          <a href="customer.html"><i class="bi bi-circle"></i>Data Pelanggan</a>
+          <a href="vendor.html"><i class="bi bi-circle"></i>Data Vendor</a>
+          <a href="employe.html"><i class="bi bi-circle"></i>Data Karyawan</a>
+        </div>
+
+        <button class="drpd-btn">
+          <i class="bi bi-file-earmark-ruled"></i>
+          Laporan
+          <i class="bi bi-caret-left"></i>
+        </button>
+        <div class="drpd-content">
+          <a href="sales_report.html"><i class="bi bi-circle"></i>Laporan Penjualan</a>
+          <a href="purchases_report.html"><i class="bi bi-circle"></i>Laporan Pembelian</a>
+          <a href="expenses_report.html"><i class="bi bi-circle"></i>Laporan Pengeluaran</a>
+          <a href="cashflow_report.html"><i class="bi bi-circle"></i>Laporan Keuangan</a>
+          <a href="lr_report.html"><i class="bi bi-circle"></i>Laporan Laba Rugi</a>
+          <a href="asset_report.html"><i class="bi bi-circle"></i>Laporan Asset</a>
+        </div>
+
+        <button class="drpd-btn">
+          <i class="bi bi-gear"></i>
+          Pengaturan
+          <i class="bi bi-caret-left"></i>
+        </button>
+        <div class="drpd-content">
+          <a href="main_setting.html"><i class="bi bi-circle"></i>Pengaturan Aplikasi</a>
+          <a href="user_setting.html"><i class="bi bi-circle"></i>Pengaturan User</a>
+        </div>
+        <!-- end of main menu -->
+      </nav>
+      <!-- end of navigation -->
+
+      <!-- footer -->
+      <footer>
+        <img src="asset/img/alex.jpg" alt="" />
+        <div class="footer-content">
+          <span class="name">Ruhyat Nasihin Hr</span>
+          <i class="bi bi-chat-dots tblpesan" title="Pesan"></i>
+          <span class="badge">9</span>
+          <a href="#">
+            <i class="bi bi-door-open" title="Log Out"></i>
+          </a>
+        </div>
+      </footer>
+      <!-- end of footer -->
+
+      <!-- notifikasi -->
+      <div class="notifications">
+        <i class="bi bi-x-square" id="ttpNt"></i>
+        <div class="notifications-header">
+          <h3>Notifikasi</h3>
+          <span>1 Baru</span>
+        </div>
+        <div class="notifications-tabs">
+          <a href="" class="dipilih">Baru</a>
+          <a href="">Dibaca</a>
+        </div>
+        <div class="notifications-content">
+          <div class="content-wrap unread">
+            <img src="asset/img/alex.jpg" alt="alex" />
+            <div class="content-isi">
+              <span>Pak Boss</span>
+              <span>23 Aug 2023 | 13:30:00</span>
+            </div>
+          </div>
+          <div class="content-wrap">
+            <img src="asset/img/drew.jpg" alt="alex" />
+            <div class="content-isi">
+              <span>Andrew</span>
+              <span>23 Aug 2023 | 11:30:00</span>
+            </div>
+          </div>
+          <div class="content-wrap">
+            <img src="asset/img/anna.jpg" alt="alex" />
+            <div class="content-isi">
+              <span>Siti Christiana</span>
+              <span>23 Aug 2023 | 11:30:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of notifikasi -->
+    </aside>
+    <!-- end of sidebar -->
+
+    <!-- main -->
+    <main>
+        
+        <header>
+            <h1>Return Penjualan</h1>
+            <a href="#" class="btn-md-liaccent">Batalkan</a>
+        </header>
+
+        <section class="pos-header">
+          <div class="pos-input">
+            <Span>23 Aug 2023</Span>
+            <i>Tanggal</i>
+          </div>
+          <div class="pos-vendor">
+            <span>Walk In Cust</span>
+            <i>Customer</i>
+          </div>
+          <div class="pos-number">
+            <span>PO2345678901</span>
+            <i>Nomor</i>
+          </div>
+          <div class="pos-total">
+            <span>192.000</span>
+            <i>Total</i>
+          </div>
+        </section>
+
+        <section class="cart">
+          <div class="cart-view">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Nama Produk</th>
+                  <th>Varian</th>
+                  <th>Qty Order</th>
+                  <th>Qty Retur</th>
+                  <th>Harga</th>
+                  <th>Subtotal</th>
+                  <th>X</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Snap Kids Surfer</td>
+                  <td>Merah, 06</td>
+                  <td>3 Pcs</td>
+                  <td>
+                    <input type="number">
+                  </td>
+                  <td>32.000</td>
+                  <td>96.000</td>
+                  <td>
+                    <a href="#" class="btn-sm-liaccent">X</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Snap Kids Surfer</td>
+                  <td>Merah, 08</td>
+                  <td>3 Pcs</td>
+                  <td>
+                    <input type="number">
+                  </td>
+                  <td>32.000</td>
+                  <td>96.000</td>
+                  <td>
+                    <a href="#" class="btn-sm-liaccent">X</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cart-payment">
+            <div class="summary">
+              <span>Ringkasan Retur</span>
+              <div>
+                <div>
+                  <span>Total Produk  di Retur</span>
+                  <span>Total Item di Retur</span>
+                </div>
+                <div>
+                  <span>2 Produk</span>
+                  <span>6 Items</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="payment">
+              <a href="#" class="btn-md-ligreen">Tambah Catatan</a>
+              <div>
+                <span>Subtotal</span>
+                <span>192.000</span>
+              </div>
+              <div>
+                <span>Pembayaran</span>
+                <input type="number">
+              </div>
+            </div>
+
+            <div class="tombol-cart">
+              <button>TUNAI</button>
+              <button>KREDIT</button>
+              <button>QRIS</button>
+              <button>TRANSFER</button>
+            </div>
+          </div>
+        </section>
+        
+        
+    </main>
+    <!-- end of main -->
+
+    <!-- javascript -->
+    <script src="asset/js/main.js"></script>
+    <script src="asset/js/data.js"></script>
+  </body>
+</html>
